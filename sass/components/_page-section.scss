@@ -1,0 +1,54 @@
+.page-section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.page-section__list {
+  display: flex;
+  gap: 30px;
+}
+
+.page-section__item {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+}
+
+.page-section__subtitle {
+  display: block;
+  width: 270px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.page-section__text {
+  display: block;
+  color: $text-color;
+  width: 270px;
+  line-height: 1.71;
+}
+
+.page-section__icon {
+  display: flex;
+  gap: 30px;
+}
+
+.page-section__list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-top: 94px;
+}
+
+.page-section__icon-style {
+  max-width: 70px;
+  height: 70px;
+}

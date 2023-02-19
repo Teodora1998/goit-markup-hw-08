@@ -1,0 +1,94 @@
+.team-bg-color {
+  background-color: $background-color;
+  background-size: contain;
+}
+
+.team-sec {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.team-sec__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  padding-bottom: 50px;
+  padding-top: 94px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-sec__list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.team-sec__item {
+  text-align: center;
+  flex-basis: 270px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-list__link {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $link-color;
+  &:hover {
+    color: $white-background;
+    background-color: $brand-color;
+    cubic-bezier: (0.4, 0, 0.2, 1);
+    transition: transform 250ms ease;
+  }
+}
+
+.card__position {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.card {
+  max-width: 270px;
+  margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $white-background;
+  gap: 30px;
+}
+
+.card__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

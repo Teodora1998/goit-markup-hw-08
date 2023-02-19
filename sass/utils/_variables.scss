@@ -1,0 +1,53 @@
+$brand-color: #2196f3;
+$text-color: #757575;
+$background-color: #f5f4fa;
+$link-color: #afb1b8;
+$white-background: #ffffff;
+$hover-color: #188ce8;
+$black-color: #000000;
+$subtitle-color: #212121;
+
+:body {
+  font-family: "Roboro", sans-serif;
+  color: #212121;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.unstyled-list {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

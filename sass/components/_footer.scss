@@ -1,0 +1,143 @@
+.bg-color {
+  background-color: #2f303a;
+  background-size: contain;
+}
+
+.footer {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer__contact {
+  display: inline-block;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.footer__logo {
+  color: $white-background;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  width: 145px;
+}
+
+.footer__logo-highlight {
+  font: "Raleway";
+  color: $brand-color;
+}
+
+.footer__adress-link {
+  margin-top: 28px;
+}
+
+.footer__adress {
+  font-weight: 700;
+  line-height: 1.17;
+  color: $white-background;
+}
+
+.footer__contact-info {
+  margin-bottom: 60px;
+}
+
+.footer__contact-link {
+  color: #ffffff99;
+  display: block;
+  margin-top: 12px;
+}
+
+.footer__social {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-left: 94px;
+}
+
+.footer__title {
+  display: block;
+  justify-content: center;
+  color: $white-background;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  color: $white-background;
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover {
+    color: $white-background;
+    background-color: $brand-color;
+    cubic-bezier: (0.4, 0, 0.2, 1);
+    transition: transform 250ms ease;
+  }
+}
+
+.footer__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-social__form-container {
+  margin-top: 72px;
+  margin-left: 94px;
+  .footer-social__title {
+    text-align: start;
+  }
+}
+
+.footer-social__email-form {
+  display: flex;
+  height: 50px;
+  gap: 12px;
+}
+
+.footer-social__email {
+  width: 358px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.footer-social__button {
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  background-color: $brand-color;
+  color: $white-background;
+  fill: $white-background;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+  padding: 10px;
+}
