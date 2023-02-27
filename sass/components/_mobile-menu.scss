@@ -21,7 +21,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: $brand-color;
+  color: $brand-color;
 }
 
 .menu-container {
@@ -36,12 +36,11 @@
   padding: 32px;
   background-color: $white-background;
   z-index: 999;
-
   transform: translateX(100%);
-  transition: transform 250ms ease;
+  transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.menu-container .is-open {
   transform: translateX(0);
   font-size: 40px;
 }
@@ -50,21 +49,21 @@
   position: absolute;
   top: 16px;
   right: 16px;
+  color: $black-color;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
 }
 
 .mobile-menu {
   display: flex;
   width: 100%;
-  padding: 0;
+  padding: 8px;
   margin: 0;
+  gap: 32px;
   list-style: none;
   margin-bottom: 32px;
-}
-
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
 }
 
 .menu-contact {
@@ -74,10 +73,32 @@
   letter-spacing: 0.02em;
 }
 
+.contact-item {
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-color;
+  &__link:hover,
+  &__link:focus {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.menu-social {
+  font-size: 14px;
+  position: relative;
+  &:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    padding-left: 10px;
+    color: $brand-color;
+  }
+}
+
 .horizontal-list {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
   margin-top: 64px;
   font-weight: 500px;
   font-size: 18px;
