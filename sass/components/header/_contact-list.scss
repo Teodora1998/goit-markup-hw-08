@@ -6,14 +6,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  flex: 0 0 100%;
 }
 
 .header__menu {
   display: none;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .header__menu {
     display: flex;
     align-items: center;
