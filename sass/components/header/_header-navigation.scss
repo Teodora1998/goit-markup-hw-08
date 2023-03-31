@@ -1,11 +1,11 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .main-nav {
     display: inline-block;
     padding: 32px 25px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .main-nav__link {
     position: relative;
     margin: 0 auto;
@@ -23,7 +23,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .selected-item {
     position: relative;
     width: 100%;
@@ -41,7 +41,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .selected-item {
     &::after {
       content: " ";

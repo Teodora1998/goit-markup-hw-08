@@ -1,14 +1,31 @@
 .about-section {
-  margin: 0 auto;
+  display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 .about-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   padding-bottom: 50px;
-  margin-top: 94px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section__title {
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-section__title {
+  }
 }
 
 .about-section__images {
