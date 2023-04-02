@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -18,19 +18,21 @@
     display: none;
   }
 }
-​ .menu-toggle:hover,
+
+.menu-toggle:hover,
 .menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
   fill: $brand-color;
 }
 
-​ .menu-container {
+.menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 10px 15px;
+  background-color: $white-background;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -38,23 +40,69 @@
   flex-direction: column;
 }
 
-​ .menu-container.is-open {
+.menu-container.is-open {
   transform: translateX(0);
 }
-​ .menu-container .menu-toggle {
+
+.menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
   color: $white-background;
 }
-​ .mobile-menu {
+
+.mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-​ .mobile-menu .link {
-  display: block;
+
+.mobile-menu .link {
   padding: 10px;
-  color: $white-background;
+  color: $subtitle-color;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.34;
+  letter-spacing: 0.02em;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.menu-page {
+  padding-top: 48px;
+}
+
+.menu-contacts {
+  margin-top: auto;
+  color: $text-color;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+}
+
+.close-menu {
+  background: transparent;
+  box-shadow: none;
+  position: relative;
+  left: 85%;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: $subtitle-color;
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+.close-menu > svg {
+  fill: currentColor;
 }

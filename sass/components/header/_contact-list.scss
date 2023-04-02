@@ -7,7 +7,8 @@
   display: flex;
 }
 
-.header__menu {
+.header__menu,
+.contact-list {
   display: none;
 }
 
@@ -18,10 +19,6 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     color: $subtitle-color;
-  }
-
-  .contact-list {
-    display: none;
   }
 
   @media screen and (min-width: 768px) {
