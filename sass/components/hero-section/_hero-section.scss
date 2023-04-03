@@ -13,7 +13,7 @@
 }
 
 .hero-bg-color {
-  background-image: url(/images/bg-img-480.png);
+  background-image: url(../images/bg-img-480.png);
   background-color: #2f303a66;
   background-blend-mode: darken;
   background-size: cover;
@@ -21,13 +21,13 @@
 
 @media screen and (min-width: 768px) {
   .hero-bg-color {
-    background-image: url(/images/bg-img-768.png);
+    background-image: url(../images/bg-img-768.png);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-bg-color {
-    background-image: url(/images/bg-img1200.png);
+    background-image: url(../images/bg-img1200.png);
   }
 }
 

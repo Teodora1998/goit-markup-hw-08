@@ -21,7 +21,6 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
   fill: $brand-color;
 }
 
@@ -58,21 +57,31 @@
 }
 
 .mobile-menu .link {
+  display: block;
   padding: 10px;
   color: $subtitle-color;
+  text-decoration: none;
   font-weight: 500;
   font-size: 35px;
   line-height: 1.34;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    color: $brand-color;
-  }
+  padding-bottom: 32px;
 }
 
 .menu-page {
   padding-top: 48px;
+}
+
+.mobile-menu .link1 {
+  font-size: 30px;
+  line-height: 1.17;
+  color: $brand-color;
+}
+
+.mobile-menu .link2 {
+  font-size: 24px;
+  line-height: 1.16;
+  color: $text-color;
 }
 
 .menu-contacts {
@@ -86,6 +95,26 @@
   &:focus {
     color: $brand-color;
   }
+}
+
+.horizontal-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
+  color: $brand-color;
+  margin: 0;
+}
+
+.menu-container .menu-social {
+  margin-left: 0;
+  color: $brand-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  padding: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .close-menu {
