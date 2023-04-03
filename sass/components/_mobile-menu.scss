@@ -51,7 +51,7 @@
 }
 
 .mobile-menu {
-  padding: 0;
+  padding: 48px 0;
   margin: 0;
   list-style: none;
 }
@@ -72,10 +72,6 @@
   }
 }
 
-.menu-page {
-  padding-top: 48px;
-}
-
 .mobile-menu .link1 {
   font-size: 30px;
   line-height: 1.17;
@@ -86,31 +82,19 @@
   font-size: 24px;
   line-height: 1.16;
   color: $text-color;
-}
-
-.menu-contacts {
-  margin-top: auto;
-  color: $text-color;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+  margin-bottom: 64px;
 }
 
 .horizontal-list {
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
-  padding: 10px;
-  color: $brand-color;
-  margin: 0;
+  margin-left: 0;
 }
 
-.menu-container .menu-social {
-  margin-left: 0;
+.menu-container .horizontal-list a {
   color: $brand-color;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14x;
   line-height: 1.22;
   letter-spacing: 0.02em;
   padding: 10px;
