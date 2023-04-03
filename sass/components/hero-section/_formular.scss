@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms linear;
@@ -12,14 +11,28 @@
 
 .modal__inner-modal {
   position: relative;
-  width: 528px;
+  width: 100%;
+  margin: 94px 15px;
   background-color: $white-background;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.modal__close-modal {
+@media screen and (min-width: 768px) {
+  .modal__inner-modal {
+    margin: 94px 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__inner-modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.modal__inner-modal .modal__close-modal {
   position: absolute;
   display: inline-block;
   border: none;
@@ -30,14 +43,11 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   top: 8px;
   right: 8px;
   &:hover {
     fill: $brand-color;
-    cubic-bezier: (0.4, 0, 0.2, 1);
-    transition: transform 250ms ease;
+    transition: transform 250ms ease cubic-bezier (0.4, 0, 0.2, 1);
   }
 }
 
@@ -66,11 +76,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
   color: $text-color;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .request-form__label {
+    line-height: 1.17;
+  }
 }
 
 .request-form__input {
@@ -78,19 +95,18 @@
   border-radius: 4px;
   margin-top: 4px;
   padding-left: 42px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   &:focus {
     outline: 1px solid $brand-color;
     border-radius: 4px;
     cursor: pointer;
-    cubic-bezier: (0.4, 0, 0.2, 1);
-    transition: transform 250ms ease;
+
+    transition: transform 250ms ease cubic-bezier (0.4, 0, 0.2, 1);
     + {
       .request-form__icon-style {
         fill: $brand-color;
-        cubic-bezier: (0.4, 0, 0.2, 1);
-        transition: transform 250ms ease;
+        transition: transform 250ms ease cubic-bezier (0.4, 0, 0.2, 1);
       }
     }
   }
@@ -118,18 +134,30 @@
   &:focus {
     outline: 1px solid $brand-color;
     border-radius: 4px;
-    cubic-bezier: (0.4, 0, 0.2, 1);
-    transition: transform 250ms ease;
+    transition: transform 250ms ease cubic-bezier (0.4, 0, 0.2, 1);
   }
 }
 
 .checkbox {
-  display: inline-flex;
-  align-self: center;
-  line-height: 1.71;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.17;
+  font-size: 12px;
   color: $text-color;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    line-height: 1.71;
+  }
+}
+
+.checkbox__link {
+  color: $brand-color;
+  cursor: pointer;
 }
 
 .checkbox__replace {
@@ -189,7 +217,6 @@ input[type="checkbox"] {
 .request-botton {
   &:hover {
     background-color: $hover-color;
-    cubic-bezier: (0.4, 0, 0.2, 1);
-    transition: transform 250ms ease;
+    transition: transform 250ms ease cubic-bezier (0.4, 0, 0.2, 1);
   }
 }
